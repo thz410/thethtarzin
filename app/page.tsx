@@ -44,7 +44,7 @@ export default function Page() {
           <div className="hero-copy">
             <p className="eyebrow">Junior full stack developer <span>—</span> Yangon, Myanmar</p>
             <h1 id="intro-title">Thethtar<br /><em>Zin</em></h1>
-            <p className="hero-summary">I build thoughtful, reliable web experiences by connecting clean interfaces with robust Java backends.</p>
+            <p className="hero-summary">I create web experiences by connecting clean interfaces with Java backends.</p>
             <div className="hero-actions">
               <a className="button button-dark" href="mailto:thethtarzin326@gmail.com">Get in touch <ArrowUpRight size={16} /></a>
               <a className="text-link" href="https://github.com/thz410" target="_blank" rel="noreferrer">View GitHub <ArrowUpRight size={15} /></a>
