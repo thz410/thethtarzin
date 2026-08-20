@@ -1,8 +1,9 @@
 'use client'
 
+import Image from 'next/image'
 import { ArrowUpRight, MapPin, Phone } from 'lucide-react'
 
-const portraitUrl = '/placeholder-user.jpg'
+const portraitUrl = '/profile.jpeg'
 
 const skillGroups = [
   { label: 'Backend', items: ['Java', 'OOP', 'Spring Boot', 'REST APIs'] },
@@ -51,7 +52,7 @@ export default function Page() {
             </div>
           </div>
           <div className="portrait-wrap">
-            <img src={portraitUrl} alt="Portrait of Thethtar Zin" className="portrait" onError={(event) => { event.currentTarget.style.display = 'none' }} />
+            <Image src={portraitUrl} alt="Portrait of Thethtar Zin" className="portrait" width={1536} height={2048} sizes="(max-width: 900px) 100vw, 44vw" quality={82} priority />
             <span className="portrait-caption">Available for opportunities<br />and meaningful work</span>
           </div>
         </section>
