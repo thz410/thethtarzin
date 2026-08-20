@@ -57,7 +57,7 @@ export default function Page() {
             <h1 id="intro-title">Thethtar<br /><em>Zin</em></h1>
             <p className="hero-summary">I create web experiences by connecting clean interfaces with Java backends.</p>
             <div className="hero-actions">
-              <a className="button button-dark" href="mailto:thethtarzin326@gmail.com">Get in touch <ArrowUpRight size={16} /></a>
+              <a className="button button-dark" href="mailto:thethtarzin326@gmail.com?subject=Project%20inquiry%20for%20Thethtar%20Zin&body=Hello%20Thethtar%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.">Get in touch <ArrowUpRight size={16} /></a>
               <a className="text-link" href="https://github.com/thz410" target="_blank" rel="noreferrer">View GitHub <ArrowUpRight size={15} /></a>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function Page() {
           <div className="resume-content">
             <div className="resume-heading">
               <div><p className="eyebrow">Thethtar Zin</p><h2 id="resume-title">Junior full stack<br /><em>developer.</em></h2></div>
-              <a className="button button-dark" href="mailto:thethtarzin326@gmail.com">Request CV <ArrowUpRight size={16} /></a>
+              <a className="button button-dark" href="mailto:thethtarzin326@gmail.com?subject=Request%20for%20Thethtar%20Zin%27s%20CV&body=Hello%20Thethtar%2C%0A%0AI%20would%20like%20to%20request%20your%20CV.">Request CV <ArrowUpRight size={16} /></a>
             </div>
             <div className="resume-grid">
               <div><span className="section-label">Profile</span><p>Junior developer learning to build useful web applications with Java, Spring Boot, JavaScript, and relational databases.</p></div>
