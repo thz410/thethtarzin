@@ -18,6 +18,7 @@ const projects = [
     type: 'Desktop application',
     description: 'A GUI-based navigation application that finds efficient paths through complex city networks using Dijkstra’s algorithm.',
     tags: ['Java Swing', 'Dijkstra’s algorithm'],
+    url: 'https://github.com/thz410/first-step-of-programming',
   },
   {
     number: '02',
@@ -26,14 +27,6 @@ const projects = [
     description: 'A relational database built for the freeCodeCamp certification, with a focus on PostgreSQL schema design and data integrity.',
     tags: ['PostgreSQL', 'Relational design'],
     url: 'https://github.com/thz410/worldcup-database-project',
-  },
-  {
-    number: '03',
-    name: 'First Step of Programming',
-    type: 'Learning project',
-    description: 'A collection of early programming exercises and practice projects built while learning core programming concepts.',
-    tags: ['Java', 'Programming fundamentals'],
-    url: 'https://github.com/thz410/first-step-of-programming',
   },
 ]
 
@@ -140,7 +133,7 @@ export default function Page() {
           <div className="contact-meta"><a href="tel:09442477448"><Phone size={15} /> 094 424 774 48</a><a href="https://github.com/thz410" target="_blank" rel="noreferrer">github.com/thz410</a><span><MapPin size={15} /> Bahan, Yangon</span></div>
         </section>
       </div>
-      <footer><span>© 2026 Thethtar Zin</span><span>Built with curiosity & care</span><a href="#top">Back to top ↑</a></footer>
+      <footer><span>© 2026 Thethtar Zin</span><a href="#top">Back to top ↑</a></footer>
     </main>
   )
 }
