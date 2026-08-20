@@ -25,6 +25,15 @@ const projects = [
     type: 'Database project',
     description: 'A relational database built for the freeCodeCamp certification, with a focus on PostgreSQL schema design and data integrity.',
     tags: ['PostgreSQL', 'Relational design'],
+    url: 'https://github.com/thz410/worldcup-database-project',
+  },
+  {
+    number: '03',
+    name: 'First Step of Programming',
+    type: 'Learning project',
+    description: 'A collection of early programming exercises and practice projects built while learning core programming concepts.',
+    tags: ['Java', 'Programming fundamentals'],
+    url: 'https://github.com/thz410/first-step-of-programming',
   },
 ]
 
@@ -36,6 +45,7 @@ export default function Page() {
         <nav className="nav-links" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#work">Work</a>
+          <a href="#resume">CV</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -68,6 +78,7 @@ export default function Page() {
             <div className="meta-grid">
               <div><span>Based in</span><strong>Yangon, Myanmar</strong></div>
               <div><span>Education</span><strong>Higher Diploma in ICT</strong></div>
+              <div><span>Date of birth</span><strong>3 February 2005</strong></div>
               <div><span>Language</span><strong>English · Intermediate</strong></div>
               <div><span>Open to</span><strong>Junior developer roles</strong></div>
             </div>
@@ -89,7 +100,7 @@ export default function Page() {
           <div className="work-content">
             <h2 id="work-title">Projects built<br /><em>with intention.</em></h2>
             <div className="project-list">
-              {projects.map((project) => <article className="project" key={project.number}><div className="project-number">{project.number}</div><div className="project-main"><div className="project-heading"><div><span className="project-type">{project.type}</span><h3>{project.name}</h3></div><ArrowUpRight className="project-arrow" size={22} /></div><p>{project.description}</p><div className="tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div></article>)}
+              {projects.map((project) => <article className="project" key={project.number}><div className="project-number">{project.number}</div><div className="project-main"><div className="project-heading"><div><span className="project-type">{project.type}</span><h3>{project.name}</h3></div><ArrowUpRight className="project-arrow" size={22} /></div><p>{project.description}</p><div className="tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>{project.url && <a className="project-link" href={project.url} target="_blank" rel="noreferrer">View repository <ArrowUpRight size={14} /></a>}</div></article>)}
             </div>
           </div>
         </section>
@@ -102,6 +113,22 @@ export default function Page() {
               <div className="timeline-item"><span>2025 — 2026</span><div><h3>Higher Diploma in Infocomm Technology</h3><p>British United College</p></div></div>
               <div className="timeline-item"><span>2025</span><div><h3>JavaSE Course</h3><p>Turing Programming Training Center</p></div></div>
               <div className="timeline-item"><span>Certification</span><div><h3>Higher Diploma in ICT</h3><p>British United College</p></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="resume" className="section resume-section" aria-labelledby="resume-title">
+          <div className="section-label"><span>05</span><span>One-page CV</span></div>
+          <div className="resume-content">
+            <div className="resume-heading">
+              <div><p className="eyebrow">Thethtar Zin</p><h2 id="resume-title">Junior full stack<br /><em>developer.</em></h2></div>
+              <a className="button button-dark" href="mailto:thethtarzin326@gmail.com">Request CV <ArrowUpRight size={16} /></a>
+            </div>
+            <div className="resume-grid">
+              <div><span className="section-label">Profile</span><p>Junior developer learning to build useful web applications with Java, Spring Boot, JavaScript, and relational databases.</p></div>
+              <div><span className="section-label">Education</span><p><strong>Higher Diploma in ICT</strong><br />British United College · 2025–2026</p><p><strong>JavaSE Course</strong><br />Turing Programming Training Center · 2025</p></div>
+              <div><span className="section-label">Projects</span><p><strong>Route Finder</strong><br />Java Swing navigation app using Dijkstra&apos;s algorithm.</p><p><strong>World Cup Database</strong><br />PostgreSQL schema and data integrity project.</p></div>
+              <div><span className="section-label">Skills</span><p>Java · OOP · Spring Boot · REST APIs<br />HTML · CSS · JavaScript<br />MySQL · PostgreSQL</p></div>
             </div>
           </div>
         </section>
