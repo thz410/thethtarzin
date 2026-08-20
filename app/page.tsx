@@ -2,7 +2,7 @@
 
 import { ArrowUpRight, MapPin, Phone } from 'lucide-react'
 
-const portraitUrl = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_pnz7eqpnz7%20%281%29-3Be7fO4aTrxtnsHRSJ1dANXzu4LUNB.jpeg'
+const portraitUrl = '/placeholder-user.jpg'
 
 const skillGroups = [
   { label: 'Backend', items: ['Java', 'OOP', 'Spring Boot', 'REST APIs'] },

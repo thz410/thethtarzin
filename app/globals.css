@@ -9,8 +9,8 @@
   --color-foreground: var(--foreground);
   --color-border: var(--border);
   --color-muted-foreground: var(--muted-foreground);
-  --font-sans: 'DM Sans', sans-serif;
-  --font-serif: 'Instrument Serif', serif;
+  --font-sans: var(--font-geist), sans-serif;
+  --font-serif: var(--font-cormorant), serif;
 }
 
 :root { color-scheme: light; --background: #f7f7f5; --foreground: #1c1d1b; --border: #d8d8d2; --muted-foreground: #70716b; --accent: #a8b7a4; }
